@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>Cadastrar Categoria</title>
+    <h2 class="p-3 mb-2 bg-danger text-black">Cadastrar Categoria</h2>
+</head>
+<body>
+    <main>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Salvar">
+        </form>        
+    </main>
+    <footer class="text-muted py-5">
+        
+            <p class="float-end mb-1">
+                <p class="mb-1">Desenvolvido por Johnatan e Laís</p>
+            </p>
+    </footer>
+</body>
+</html>
